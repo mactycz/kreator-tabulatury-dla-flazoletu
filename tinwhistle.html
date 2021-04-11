@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no'/>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Kreator tabulatur dla fletu irlandzkiego!</h1> 
+    </header>
+
+    <div>
+        <textarea name="input" style="resize: none;" id="input" cols="100" rows="10" class="input" oninput="sprawdz();"  ></textarea>
+        
+    </div>
+<div id="board" >
+    <div id="a" ><img src="/tinwhistle/tabs/a.png" class="example"/></div>
+    <div id="b" ><img src="/tinwhistle/tabs/b.png" class="example"/></div>
+    <div id="c" ><img src="/tinwhistle/tabs/c.png" class="example"/></div>
+    <div id="d" ><img src="/tinwhistle/tabs/d.png" class="example"/></div>
+    <div id="e" ><img src="/tinwhistle/tabs/e.png" class="example"/></div>
+    <div id="f" ><img src="/tinwhistle/tabs/f.png" class="example"/></div>
+    
+    <div id="A" ><img src="/tinwhistle/tabs/a.png" class="example"/></div>
+    <div id="B" ><img src="/tinwhistle/tabs/b.png" class="example"/></div>
+    <div id="C" ><img src="/tinwhistle/tabs/c.png" class="example"/></div>
+    <div id="D" ><img src="/tinwhistle/tabs/d.png" class="example"/></div>
+    <div id="E" ><img src="/tinwhistle/tabs/e.png" class="example"/></div>
+    <div id="F" ><img src="/tinwhistle/tabs/f.png" class="example"/></div>
+    <div id="la" class="character" >a</div>
+    <div id="lb" class="character">b</div>
+    <div id="lc" class="character">c</div>
+    <div id="ld" class="character">d</div>
+    <div id="le" class="character">e</div>
+    <div id="lf" class="character">f</div>
+    <div id="lA" class="character" >A</div>
+    <div id="lB" class="character">B</div>
+    <div id="lC" class="character">C</div>
+    <div id="lD" class="character">D</div>
+    <div id="lE" class="character">E</div>
+    <div id="lF" class="character">F</div>
+    
+</div>
+
+<article>
+    <h1 id="html_download">
+
+    </h1>
+</article>
+
+    
+    
+<input id="img" type="file" accept="image/*" onclick="changeImage()" style="display:none;"/>
+<input type="button" value="Dodaj tło" onclick="document.getElementById('img').click();" class="buttons"/>
+
+
+
+<input id="save" type="submit" value="Zapisz" onclick="addCanvas()" class="buttons"/>
+
+<article>
+    <h2 id="canvas">
+
+    </h2>
+</article>
+
+</body>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="html2canvas.min.js"></script>
+<script src="tin.js"></script>
+
+
+</html>
